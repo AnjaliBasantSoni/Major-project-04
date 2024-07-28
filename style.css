@@ -1,0 +1,694 @@
+@font-face{
+    font-family: jornadaSans;
+    src: url(./JornadaSans-Medium.woff2);
+ }
+@font-face{
+    font-family: yolele ;
+    src: url(./Yolele-Regular\ \(2\).woff2);
+}
+@font-face{
+    font-family: plakkaat ;
+    src: url(./subset-Plakkaat-Italic\ \(1\).woff2);
+}
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+#loco{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+#page1{
+    width: 100vw;
+    height: 100vh;
+   background-color: #fefefe; 
+}
+#page1 img{
+    position: absolute;
+    width: 30%;
+    height: 5%;
+    z-index: 99999999999;
+    margin-top: -8%;
+    margin-left: 35%;
+    background-position: fill;
+    background-size: cover;
+}
+#orange{
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    position: fixed;
+    z-index: 99999;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    background-color: #f65219;
+}
+#orange h4{
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: jornadaSans;
+}
+#nav{
+   width: 100vh;
+   height: 40px;
+   margin-top: 70px;
+   position: absolute;
+   /* background-color: aqua; */
+}
+#menu{
+    width: 25px;
+    height: 19px;
+    margin-left: 50px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    z-index: 99999999999999;
+    justify-content: center;
+    cursor: pointer;
+    flex-direction: column;
+    /* background-color: brown; */
+}
+#line1{
+    width: 100%;
+    transition: all linear 0.4s;
+    height: 6px;
+    margin-top: -6px;
+    font-family: yolele;
+    border-radius: 15px 0 15px 0;
+    background-color:#f65219 ;
+}
+#line2{
+    width: 100%;
+    height: 6px;
+    border-radius: 15px 0 15px 0;
+    font-family: yolele;
+  transform-origin: 0 0;
+  margin-top: 5px;
+    background-color:#f65219 ;
+}
+#nav h4{
+    margin-top: -7px;
+    margin-left: 8%;
+    position: absolute;
+    position: fixed;
+    z-index: 999999999999999;
+    color:#f65219 ;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: yolele;
+}
+#nav h1{
+    font-size: 60px;
+    margin-left: 40%;
+    color:#f65219 ;
+    font-family: yolele;
+}
+#nav h3{
+    font-size: 17px;
+    position:absolute;
+    position: fixed;
+    display: flex;
+    color:#000 ;
+    font-weight: 900;
+    z-index: 999999999;
+    font-family: yolele;
+    margin-top: -20px;
+    margin-left: 90%;
+} 
+#nav h5{
+    font-size: 17px;
+    position:absolute;
+    position: fixed;
+    z-index: 999999999;
+    display: flex;
+    color: #f65219;
+    font-family: yolele;
+    margin-top: -20px;
+    margin-left: 95%;
+}
+#full-scr {
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    z-index: 9999999999999999999;
+    margin-top: 12%;
+    transition: all ease-out 0.5s;
+    bottom: 100%;
+    display: flex;
+    align-items: center;
+    background: #fefefe;
+    color: #161e24;
+    font-family: JornadaSans,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    justify-content: center;
+    flex-direction: column;
+}
+#full-scr h1{
+    font-size: 170px;
+    font-weight:100 ;
+    letter-spacing: 18px;
+    line-height: 19vh;
+    font-family: plakkaat;
+}
+#full-scr h1:hover{
+    scale: 1.1;
+    color: #f65219;
+}
+#full-scr h2{
+    font-size: 110px;
+    font-weight:100 ;
+    letter-spacing: 10px;
+    line-height: 13vh;
+    font-family: plakkaat;
+}
+#full-scr h2:hover{
+    scale: 1.1;
+    color: #f65219;
+}
+#full-scr h3{
+    font-size: 95px;
+    font-weight:100 ;
+    letter-spacing: 8px;
+    line-height: 15vh;
+    font-family: plakkaat;
+}#full-scr h3:hover{
+    scale: 1.1;
+    color: #f65219;
+}
+#full-scr h4{
+    font-size: 70px;
+    font-weight:100 ;
+    letter-spacing: 5.5px;
+    line-height: 10vh;
+    font-family: plakkaat;
+}#full-scr h4:hover{
+    scale: 1.1;
+    color: #f65219;
+}
+#full-scr h5{
+    font-size: 65px;
+    font-weight:100 ;
+    letter-spacing: 4px;
+    line-height: 10vh;
+    font-family: plakkaat;
+}#full-scr h5:hover{
+    scale: 1.1;
+    color: #f65219;
+}
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    bottom: 100%;
+    position: absolute;
+    z-index: 9999999;
+    transition: all ease-out 0.5s;
+    bottom: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.swiper {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 20%;
+    margin-top: 13%;
+    margin-left: 35%;
+    transform: translate( 30%, 10%);
+    height: 60%;
+    object-fit: cover;
+  }
+#next{
+    width: 100vw;
+    height: 80vh;
+    /* background-color: #bdcfdc; */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 13%;
+    justify-content: center;
+    text-align: center;
+}
+#next h1{
+    font-size: 190px;
+    font-family: plakkaat;
+    font-weight: 100;
+    /* margin-top: -3%; */
+    line-height: 50px;
+}
+#next h2{
+    font-size: 160px;
+    font-family: plakkaat;
+    font-weight: 100; 
+}
+#next h3{
+    font-size: 120px;
+    font-weight: 100;
+    line-height: 10px;
+    font-family: plakkaat;
+}
+#next h5{
+    font-size: 90px;
+    font-weight: 100;
+    font-family: plakkaat;
+    line-height: 18px;
+}
+#next h4{
+    font-size: 110px;
+    font-weight: 100;
+    z-index: 99999;
+    line-height: 220px;
+    margin-left: -5%;
+    color: #000;
+    font-family: plakkaat;
+}
+#next h4 span{
+    color: #f65219;
+    position: fixed;
+    font-size: 140px;
+    margin-left: 13%;
+    z-index: 9999999999999999;
+    margin-right: 10%;
+}
+#next #span1{
+    margin-left: -20%;
+    position: fixed;
+    z-index: 999999999999;
+} 
+#next h6{
+    font-family: yolele;
+    margin-left: -90%;
+    display: flex;
+    position: relative;
+    /* position: fixed; */
+    flex-direction: column;
+    rotate: 270deg;
+    top: -47%;
+}
+#thin{
+    width: 5.5%;
+    display: flex;
+    flex-direction: column;
+    rotate: 270deg;
+    position: relative;
+    border-radius: 5px 0 5px 0;
+    top: -48%;
+    left: 49px;
+    height: 1.9px;
+    background-color: #000;
+}
+#next img{
+    width: 20%;
+    height: 60vh;
+    object-fit: fill;
+    margin-top: 63%;
+    margin-left: 40%;
+}
+#page2{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 25%;
+    /* background-color: chocolate; */
+    font-family: plakkaat;
+    position:absolute;
+}
+#page2 h1{
+    margin-left: 37%;
+    font-weight: 100;
+    font-size: 145px;
+    margin-top: -5%;
+}
+#page2 h2{
+    margin-left: 37%;
+    margin-top: -2.5%;
+    font-weight: 100;
+    font-size: 120px;
+    color: #f65219;
+}
+#page2 h2 span{
+    font-size: 150px;;
+}
+#page2 h3{
+    margin-left: 37%;
+    margin-top: -2%;
+    font-weight: 100;
+    font-weight: 120;
+    font-size: 120px;
+}
+#page2 h4{
+    margin-left: 37%;
+    margin-top: -1.5%;
+    font-weight: 100;
+    font-size: 75px;
+    color: #000;
+}
+#page3{
+    width: 100vw;
+    height: 100vh;
+    margin-top: 80%;
+    /* background-color: rgb(147, 210, 30); */
+}
+#page3 p{
+    position: absolute;
+   left: 30%;
+   font-family: jornadaSans;
+   font-size: 25px;
+   transform: translate(30%, -0%);
+}
+#page4{
+    width: 100vw;
+    object-fit: fill;
+    height: 100vh;
+    /* background-color: rgb(177, 30, 210); */
+}
+#page4 img{
+    width: 23%;
+    height: auto;
+    margin-top: 35%;
+    margin-left: 40%;
+}
+#page5{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(210, 195, 30); */
+    object-fit: fill;
+}
+#page5 #img1{
+    width: 20%;
+    position: absolute;
+    margin-left: 10%;
+    height: auto;
+}
+#page5 #img2{
+    width: 22%;
+    position: absolute;
+    margin-left: 70%;
+    height: auto;
+}
+#page5 h1{
+    margin-top: 38%;
+    font-size: 100px;
+    position: absolute;
+    font-family: yolele;
+    font-weight: 100;
+    margin-left: 37%;
+}
+#page6{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(210, 51, 30); */
+}
+#page6 p{
+    position: absolute;
+   left: 30%;
+   font-family: jornadaSans;
+   font-size: 28px;
+   transform: translate(30%, -0%);
+}
+#page6 h1{
+    margin-top: 25%;
+    font-size: 80px;
+    position: absolute;
+    font-family: yolele;
+    font-weight: 100;
+    margin-left: 37%;
+}
+#page6 h5{
+    position: absolute;
+   margin-left: 37%;
+   margin-top: 35%;
+   font-weight: 100;
+   font-family: jornadaSans;
+   font-size: 28px;
+}
+#page6 h5 hr{
+    background-color: #000;
+    width: 160%;
+    height: 3px;
+}
+#page6 h3{
+    position: relative;
+  left: 36.5%;
+  top: 93%;
+   font-weight: 100;
+   font-family: jornadaSans;
+   font-size: 28px;
+}
+#page6 #span1{
+    font-size: 60px;
+}
+#page6 h3 br{
+    position: absolute;
+    margin-left: 60px;
+}
+#page6 #span2{
+    margin-left: 20px;
+}
+#page7{
+    width: 100vw;
+    height: 100vh;
+    font-weight: 100;
+    /* background-color: rgb(30, 189, 210); */
+}
+#page7 h3{
+    position: relative;
+  left: 36.5%;
+  top: 18%;
+   font-family: jornadaSans;
+   font-size: 28px;
+}
+#page7 h5{
+    position: relative;
+  left: 36.5%;
+  top: 18%;
+   font-family: jornadaSans;
+   font-size: 15px;
+}
+#page7 h3 span{
+     font-weight: 200;
+}
+#page7 h3 hr{
+    background-color: #000;
+    width: 42%;
+    height: 3px;
+}
+#page7 h1{
+    margin-top: 14%;
+    font-size: 100px;
+    position: absolute;
+    font-family: yolele;
+    z-index: 9999999;
+    font-weight: 100;
+    margin-left: 36%;
+}#page7 h1:hover{
+    scale: 1.3;
+}
+#page8{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(30, 210, 153); */
+}
+#page8 h1{
+    top: 12%;
+    position: relative;
+    font-size: 120px;
+    font-family: plakkaat;
+    line-height: 0.9;
+    font-weight: 100;
+    margin-left: 29%;
+}
+#page8 h1:hover{
+    color: #f65219;
+}
+#page8 h1 span{
+    margin-left: 38%;
+    position: absolute;
+    font-size:150px ;
+    margin-top: -10%;
+}
+#page8 h1 span:hover{
+    color: #f65219;
+}
+#page8 h2{
+    margin-top: -13%;
+    font-size: 100px;
+    font-family: plakkaat;
+    display: flex;
+    font-weight: 100;
+    line-height: 0.8;
+    margin-left: 55%;
+}
+#page8 h2 span{
+    margin-left: -27%;
+    position: absolute;
+    margin-top: 13%;
+}
+#page8 h2:hover{
+    color: #f65219;
+}
+#page8 h2 span:hover{
+    color: #f65219;
+}
+#page8 h3{
+    margin-top: 5%;
+    font-size: 80px;
+    font-family: plakkaat;
+    font-weight: 100;
+    margin-left: 55%;
+}
+#page8 h3:hover{
+    color: #f65219;
+}
+#page8 h4{
+    margin-top: 0%;
+    font-size: 50px;
+    font-family: plakkaat;
+    display: flex;
+    font-weight: 100;
+    line-height: 0.9;
+    margin-left: 55%;
+}
+#page8 h4:hover{
+    color: #f65219;
+}
+#page8 h5{
+    margin-top: 5%;
+    font-size: 60px;
+    font-family: plakkaat;
+    display: flex;
+    font-weight: 100;
+    line-height: 0.8;
+    margin-left: 29%;
+}
+#page8 h5 span {
+    margin-left: -1%;
+    position: absolute;
+    margin-top: -5%;
+}
+#page8 h5:hover{
+    color: #f65219;
+}#page8 h5 span:hover{
+    color: #f65219;
+}
+#page8 h6{
+    margin-top: 18%;
+    font-size: 40px;
+    font-family: plakkaat;
+    font-weight: 100;
+    margin-left: 29%;
+}
+#page8 h6:hover{
+    color: #f65219;
+}
+#page9{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(207, 210, 30); */
+}
+#page9 h1{
+    top: 35%;
+    position: relative;
+    font-size: 160px;
+    font-family: plakkaat;
+    line-height: 0.9;
+    font-weight: 100;
+    color: #f65219;
+    margin-left: 35%;
+}
+#page9 h2{
+    top: 35%;
+    position: relative;
+    font-size: 135px;
+    font-family: plakkaat;
+    line-height: 0.9;
+    font-weight: 100;
+    margin-left: 35%;
+}
+#page10{
+    width: 100vw;
+    height: 140vh;
+    /* background-color: rgb(210, 30, 186); */
+    font-weight: 100;
+}
+#badi{
+    width: 20%;
+    height: 60vh;
+    margin-top: 5%;
+    margin-left: 25%;
+    rotate: 7deg;
+    filter: drop-shadow(0 10px 10px black);
+}
+#page10 h1{
+    margin-left: 25%;
+    margin-top: 35px;
+    font-size: 100px;
+    font-family: plakkaat;
+}
+#page10 h2{
+    margin-left: 25%;
+    margin-top: -10px;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: plakkaat;
+}
+#chotti{
+    width: 25%;
+    height: 40vh;
+    position: relative;
+    top: -65%;
+    margin-left: 50%;
+    rotate: -7deg;
+    filter: drop-shadow(0 10px 10px black);
+}
+#page10 h3{
+    top: -65%;
+    position: relative;
+    flex-direction: column;
+    white-space: nowrap;
+    font-size: 40px;
+    font-family: plakkaat;
+    left: 55%;
+}
+#page10 h3 hr{
+    background-color: #000;
+    width: 600px;
+    height: 5px;
+    position: absolute;
+    margin-top: 12%;
+    margin-left: -20%;
+}
+#page10 h6{
+    top: -45%;
+    position: relative;
+    font-size: 15px;
+    font-family: sans-serif;
+    left: 35%;
+}
+#page10 h6 span{
+    color: #f65219;
+}
